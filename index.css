@@ -1,0 +1,533 @@
+
+/*
+Magiya, Priya
+Red Id: 821438547
+Instructor: Cyndi Chie
+CS545_00
+Assignment #4
+Fall 2020
+*/
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+
+/* Specific requirements for header
+ */
+
+header {
+	margin: 0;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	height: 350px;
+	overflow: hidden;
+}
+
+/* Specific requirements for the background image for header */
+
+
+#bg4 {
+	background-attachment: scroll;
+	padding-top: 100px;
+	background-image: url("images/Dinosaur.jpg");
+	background-size: 100% 100%;
+	height: 300px;
+	width: 100%;
+}
+
+/* Style the header */
+.top_header {
+	width: 100%;
+	text-align: center;
+	color: #000000;
+	background-color: #B30300;
+	padding: 0;
+	top: 140px;
+}
+
+/* Specific fonts attribute */
+
+h1 {
+	font-weight: bold;
+	font-size: 39pt;
+	color: #FFFFFF;
+	font-family: "Times New Roman",Aventure, serif;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: Center;
+	width: 100%;
+}
+
+h2 {
+	font-size: 20pt;
+	font-weight: bold;
+	color: #000000;
+	font-family: Times New Roman, serif;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h3 {
+	font-size: 25pt;
+	Color:	#000000;
+	font-family: Times New Roman, serif;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+h4{
+	font-size: 15pt;
+	Color:	#000000;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+#main {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+/* Specific requirement for my content (the golden box)
+ */
+
+#content {
+	width: 80%;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+article {
+	margin: 30px;
+}
+
+section {
+	margin-bottom: 45px;
+}
+
+
+/* Specific requirement for footer block
+ */
+
+.footer {
+	width: 40%;
+	text-align: center;
+	background-color: #B30300;
+	color: #fffcf5;
+	display: flex;
+	padding-left: 30%;
+	padding-right: 30%;
+}
+
+/* Specific requirement for footer font
+ */
+
+
+.footer h2 {
+	color: #DAC691;
+	text-align: left;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #fffcf5;
+}
+
+/* div block for footer */
+
+/* div block for sentence */
+
+.part2 {
+	color: #DAC691;
+	height: max-content;
+	max-width: 60%;
+	margin: auto;
+	padding-top: 2%;
+	margin-bottom: 20px;
+}
+
+/* div block for image
+ */
+ 
+.part1 {
+	max-width: 40%;
+	min-height: 5%;
+}
+
+/* SDSU logo attributes
+ */
+ 
+#logo1 {
+	max-width: 80%;
+	max-height: 80%;
+	padding: 10%;
+	vertical-align: middle;
+}
+
+/* San Diego National History Museum logo attributes
+ */
+ 
+#logo2 {
+	width: 100%;
+}
+
+/* Responsive design for for screen 1500px footer and SDSU logo
+ */
+ 
+@media screen and (max-width: 1500px) {
+	.footer {
+		width: 60%;
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+
+	.part1 {
+		max-height: 20%;
+	}
+}
+
+/* Responsive design for for screen 1000px footer and SDSU logo
+ */
+
+@media screen and (max-width: 1000px) {
+	.footer {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.part1 {
+		max-height: 20%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.footer {
+		width: 62.6%;
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+
+	.part1 {
+		max-height: 20%;
+	}
+}
+
+@media screen and (max-width: 80px) {
+	.footer {
+		width: 62.6%;
+		padding-left: 20%;
+		padding-right: 76px;
+	}
+
+	.part1 {
+		max-height: 20%;
+	}
+}
+
+/* Footer links attribute
+ */
+
+.Nav2 {
+	padding-left: 0;
+}
+
+.Nav2 li {
+	display: inline-block;
+}
+
+.Nav2 a {
+	color: #fffcf5;
+	padding-left: 10px;
+}
+
+p {
+	margin-top: 15px;
+	margin-right: 15px;
+	margin-left: 15px;
+	margin-bottom: 5px;
+}
+
+/*
+Navigation Styles
+*/
+#sidebar {
+	font-size: 14pt;
+	background-color: #000000;
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 20%;
+}
+
+#sidebar ul {
+	margin: 0;
+}
+
+#nav1 {
+	padding: 0;
+	list-style: none;
+}
+
+#nav1 li {
+	border-bottom: 1px solid white;
+	display: block;
+	float: left;
+	width: 80%;
+	padding: 10%;
+}
+
+/* Navigation attributes link
+ */
+ 
+#nav1 li a:link,
+#nav1 li a:visited {
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+}
+
+/* Navigation attributes hover on links
+ */
+
+#nav1 li a:active,
+#nav1 li a:hover {
+	color: #B30300;
+	background-color: #ffffff;
+	text-decoration: none;
+	width: 45%;
+	padding: 0px;
+	display: block;
+}
+
+/* This is used for home page and Join+Give page  */
+
+.infoBlock {
+	margin: 0;
+	background-color: #DAC691;
+	border-right: 1px solid white;
+	border-left: 3px solid white;
+	padding: 20px;
+	font-size: 15px;
+}
+
+/* This is used for about page and learn+explore */
+
+.infoBlock1 {
+	width: 94%;
+	margin: 0;
+	background-color: #DAC691;
+	border-right: 1px solid white;
+	border-left: 3px solid white;
+	padding: 20px;
+	font-size: 15px;
+}
+
+/* This is used for events and science page
+ */
+ 
+.infoBlock2 {
+	width: 50%;
+	margin: 0;
+	background-color: #DAC691;
+	border-right: 1px solid white;
+	border-left: 3px solid white;
+	padding: 20px;
+	font-size: 15px;
+}
+
+/* Responsive Design for sidebar for max screen of 800px */
+
+@media screen and (max-width: 800px) {
+	#sidebar {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		overflow: auto;
+	}
+
+	#nav1 {
+		display: flex;
+	}
+
+	#nav1 li {
+		float: none;
+		width: 96%;
+		padding: 2%;
+	}
+
+	#main {
+		display: block;
+	}
+
+	#content {
+		width: 100%;
+	}
+
+	#exhibits {
+		border: none;
+	}
+}
+
+/* Responsive Design for sidebar for max screen of 500px */
+
+@media screen and (max-width: 500px) {
+	#nav1 {
+		display: block;
+	}
+
+	#nav1 li {
+		text-align: center;
+	}
+}
+
+/* Layouts for images */
+
+.beach {
+	padding:0px;
+	width:100%;
+    height:auto;
+}
+
+.desert {
+	padding:0px;
+	width:100%;
+    height:auto;
+}
+
+.museum{
+	float: right;
+	padding:0px;
+	width:50%;
+    height:auto;
+}
+
+.hand {
+	padding:0px;
+	width:100%;
+    height:auto;
+	width:25%;
+	float: right;
+}
+
+.bones {
+	padding:0px;
+	width:100%;
+    height:auto;
+	width:60%;
+	float: right;
+}
+
+.forest {
+	padding:0px;
+	width:100%;
+    height:auto;
+}
+
+.river {
+	padding:0px;
+	width:100%;
+    height:auto;
+}
+
+.biodiversity {
+	padding:0px;
+	width:100%;
+    height:auto;
+}
+
+.peninsula {
+	padding:0px;
+	width:100%;
+    height:auto;
+}
+
+.fossil {
+	padding:0px;
+	width:100%;
+    height:auto;
+}
+
+.ENS {
+	float: right;
+	padding:0px;
+	width:50%;
+    height:auto;
+}
+
+/* Style for the buttons */
+
+.button {
+	background-color: #000000;
+	color: white;
+	padding: 10px;
+}
+
+.opbtn {
+  background-color: #000000	;
+  color: white;
+  border: 1px solid white;
+  font-size: 12pt;
+  padding: 16px 20px;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat is hidden by default */
+.msgbtn {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: none;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.fcontain {
+  max-width: 300px;
+  padding: 10px;
+  border: 1px solid;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.fcontain textarea {
+  width: 100%;
+  padding: 0px;
+  margin: 5px 0 15px 0;
+  background: #f1f1f1;
+  min-height: 100px;
+}
+
+/* When the textarea gets focus */
+.fcontain textarea:focus {
+  background-color: #ddd;
+}
+
+/* Set style for the submit or send button */
+.fcontain .btn {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 12pt;
+  padding: 16px 20px;
+  border: none;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.fcontain .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.fcontain .btn:hover, .opbtn:hover {
+  opacity: 1;
+}

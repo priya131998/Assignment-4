@@ -1,0 +1,354 @@
+/*
+Magiya, Priya
+Red Id: 821438547
+Instructor: Cyndi Chie
+CS545_00
+Assignment #4
+Fall 2020
+*/
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/* Specific requirements for header
+ */
+
+header {
+	margin: 0;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	height: 350px;
+	overflow: hidden;
+}
+
+/* Specific requirements for the background image for header */
+
+
+#bg4 {
+	background-attachment: scroll;
+	padding-top: 100px;
+	background-image: url("images/Dinosaur.jpg");
+	background-size: 100% 100%;
+	height: 300px;
+	width: 100%;
+}
+
+/* Style the header */
+.top_header {
+	width: 100%;
+	text-align: center;
+	color: #000000;
+	background-color: #B30300;
+	padding: 0;
+	top: 140px;
+}
+
+/* Specific fonts attribute */
+
+h1 {
+	font-weight: bold;
+	font-size: 39pt;
+	color: #FFFFFF;
+	font-family: "Times New Roman",Aventure, serif;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: Center;
+	width: 100%;
+}
+
+h2 {
+	font-size: 20pt;
+	font-weight: bold;
+	color: #000000;
+	font-family: Times New Roman, serif;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h3{
+	font-size: 15pt;
+	Color:	#000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+#main {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+/* Specific requirement for my content (the golden box)
+ */
+
+
+#content1{
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+article {
+	margin: 30px;
+}
+
+section {
+	margin-bottom: 45px;
+}
+
+
+/* Specific requirement for footer block
+ */
+
+.footer {
+	width: 40%;
+	text-align: center;
+	background-color: #B30300;
+	color: #fffcf5;
+	display: flex;
+	padding-left: 30%;
+	padding-right: 30%;
+}
+
+/* Specific requirement for footer font
+ */
+
+
+.footer h2 {
+	color: #DAC691;
+	text-align: left;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #fffcf5;
+}
+
+/* div block for footer */
+
+/* div block for sentence */
+
+.part2 {
+	color: #DAC691;
+	height: max-content;
+	max-width: 60%;
+	margin: auto;
+	padding-top: 2%;
+}
+
+/* div block for image
+ */
+ 
+.part1 {
+	max-width: 40%;
+	min-height: 5%;
+}
+
+/* SDSU logo attributes
+ */
+ 
+#logo1 {
+	max-width: 80%;
+	max-height: 80%;
+	padding: 10%;
+	vertical-align: middle;
+}
+
+/* San Diego National History Museum logo attributes
+ */
+ 
+#logo2 {
+	width: 100%;
+}
+
+/* Responsive design for for screen 1500px footer and SDSU logo
+ */
+ 
+@media screen and (max-width: 1500px) {
+	.footer {
+		width: 60%;
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+
+	.part1 {
+		max-height: 20%;
+	}
+}
+
+/* Responsive design for for screen 1000px footer and SDSU logo
+ */
+
+@media screen and (max-width: 1000px) {
+	.footer {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.part1 {
+		max-height: 20%;
+	}
+}
+
+
+/* Footer links attribute
+ */
+
+.Nav2 {
+	padding-left: 0;
+}
+
+.Nav2 li {
+	display: inline-block;
+}
+
+.Nav2 a {
+	color: #fffcf5;
+	padding-left: 10px;
+}
+
+p {
+	margin: 15px;
+}
+
+/*
+Navigation Styles
+*/
+#sidebar {
+	font-size: 14pt;
+	background-color: #000000;
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 20%;
+}
+
+#sidebar ul {
+	margin: 0;
+}
+
+#nav1 {
+	padding: 0;
+	list-style: none;
+}
+
+#nav1 li {
+	border-bottom: 1px solid white;
+	display: block;
+	float: left;
+	width: 80%;
+	padding: 10%;
+}
+
+/* Navigation attributes link
+ */
+ 
+#nav1 li a:link,
+#nav1 li a:visited {
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+}
+
+/* Navigation attributes hover on links
+ */
+
+#nav1 li a:active,
+#nav1 li a:hover {
+	color: #B30300;
+	background-color: #ffffff;
+	text-decoration: none;
+	width: 45%;
+	padding: 0px;
+	display: block;
+}
+
+
+/* This is used for the sign up and confirmation page */
+
+.infoBlock1 {
+	width: 94%;
+	margin: 0;
+	background-color: #DAC691;
+	border-right: 1px solid white;
+	border-left: 3px solid white;
+	padding: 20px;
+	font-size: 15px;
+}
+
+.infoblock4{
+	margin: 0;
+	background-color: #DAC691;
+	border-right: 1px solid white;
+	border-left: 3px solid white;
+	padding: 20px;
+	font-size: 15px;
+	width:100%;
+}
+
+/* Responsive Design for sidebar for max screen of 800px */
+
+@media screen and (max-width: 800px) {
+	#sidebar {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		overflow: auto;
+	}
+
+	#nav1 {
+		display: flex;
+	}
+
+	#nav1 li {
+		float: none;
+		width: 96%;
+		padding: 2%;
+	}
+
+	#main {
+		display: block;
+	}
+
+	#content {
+		width: 100%;
+	}
+
+	#exhibits {
+		border: none;
+	}
+}
+
+/* Responsive Design for sidebar for max screen of 500px */
+
+@media screen and (max-width: 500px) {
+	#nav1 {
+		display: block;
+	}
+
+	#nav1 li {
+		text-align: center;
+	}
+}
+
+/* Layouts for images */
+
+.historymuseum{
+	padding-top: 325px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-right: 0;    
+	height:auto;
+	margin:0px;
+}
+
+/* This is specification for the error message */
+
+.error_message {
+	color: #ED2D05;
+	
+}
+
